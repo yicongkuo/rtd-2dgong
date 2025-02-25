@@ -1,14 +1,45 @@
-site_name: 土地公 Quick Start
+site_name: 土地公教你快速開始
 
+## 網站分頁
 nav:
   - 首頁: index.md
-  - 第二頁: about.md
-  - About:
-    - Abc: about.md
+  - MkDocs:
+    - mkdocs/index.md
+    - Page 1: mkdocs/abc.md 
 
-theme: material
+theme:
+  name: material
+  icon:
+    logo: material/google-downasaur
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue # 佈景主題主色
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple # 佈景主題主色
+      accent: purple      
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features: # 功能
+    - navigation.top
+    - navigation.instant
+    - navigation.indexes
+    - navigation.instant.progress # toc目錄會定位變色
+    - navigation.footer
+    - navigation.tracking
 
 markdown_extensions:
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
