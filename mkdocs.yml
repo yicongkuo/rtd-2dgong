@@ -1,0 +1,14 @@
+site_name: 土地公 Quick Start
+
+nav:
+  - 首頁: index.md
+  - 第二頁: about.md
+  - About:
+    - Abc: about.md
+
+theme: material
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
